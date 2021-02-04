@@ -37,17 +37,7 @@
                             position: absolute;
                             top: 0;
                             left: 0;
-                           /* object-fit: cover;
-                            object-position: center;
-                            width: 35%;
-                            height: 100%;
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            right: 0;
-                            top: 0;
-                            margin: auto;
-                            */
+                        
                         }
                     }
                     &__info{
@@ -59,16 +49,26 @@
                     width: calc(69%  - 16px);
                     background:sandybrown;
                     margin:  8px;
+                    display: flex;
+                    justify-content: space-between;
                     &__title{
                         
+                        display: flex;
+                        flex-wrap: wrap;
+                        max-width: 78%;
+                        height: 20%;
+                       background:red;
+                       margin-top: 60px;
+                       margin-left: 30px;
                        .subtitle{
+                         
                         font-size: 30px;
                         font-weight: 500;
                         color: $information-text_color;
                         line-height: .75;
                        }
                        .heading{
-                        font-size: 62px;
+                        font-size: calc(32px + 30 * (100vw / 1600));
                         font-weight: bold;
                         color: $main_color;
                         line-height: .75;
