@@ -1,0 +1,82 @@
+.content{
+    .wrapper{
+        .row{
+          
+           
+            .item{
+                padding: 0;
+                display: flex;
+    
+                flex-wrap:wrap;
+                margin:  -8px;
+                justify-content: space-between;
+                width: 100%;
+               
+                box-sizing: border-box;
+                .general-information{
+                    //background:rosybrown;
+                   
+                    width: calc(30%  - 16px);
+                    margin:  8px;
+                    &__img{
+                        
+                        height: 473px;
+                        //padding: 0 0 100% 0;
+                        position: relative;
+                       
+                        
+                        overflow: hidden;
+                        
+                        
+                       
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                            object-position:center;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                           /* object-fit: cover;
+                            object-position: center;
+                            width: 35%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            top: 0;
+                            margin: auto;
+                            */
+                        }
+                    }
+                    &__info{
+                        background:yellow;
+                        height: 373px;
+                    }
+                }
+                .main{
+                    width: calc(69%  - 16px);
+                    background:sandybrown;
+                    margin:  8px;
+                    &__title{
+                        
+                       .subtitle{
+                        font-size: 30px;
+                        font-weight: 500;
+                        color: $information-text_color;
+                        line-height: .75;
+                       }
+                       .heading{
+                        font-size: 62px;
+                        font-weight: bold;
+                        color: $main_color;
+                        line-height: .75;
+                        margin-top: 12px;
+                       }
+                    }
+                }
+            }
+        }
+    }
+}
