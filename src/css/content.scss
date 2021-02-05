@@ -50,14 +50,15 @@
                     background:sandybrown;
                     margin:  8px;
                     display: flex;
-                    justify-content: space-between;
+                    
+                    flex-direction: column;
                     &__title{
                         
                         display: flex;
                         flex-wrap: wrap;
                         max-width: 78%;
                         height: 20%;
-                       background:red;
+                      
                        margin-top: 60px;
                        margin-left: 30px;
                        .subtitle{
@@ -68,12 +69,36 @@
                         line-height: .75;
                        }
                        .heading{
-                        font-size: calc(32px + 30 * (100vw / 1600));
-                        font-weight: bold;
-                        color: $main_color;
-                        line-height: .75;
-                        margin-top: 12px;
+                        h2{
+                            font-size: calc(32px + 30 * (100vw / 1600));
+                            font-weight: bold;
+                            color: $main_color;
+                            line-height: .75;
+                            margin-top: 12px;
+                        }
                        }
+                    }
+                    &__description{
+                        margin-left: 30px;
+                        &_haeding{
+                          h3{
+                            font-size: 30px;
+                            font-weight: 700;
+                            color: $main_color;
+                          }
+                            
+                        }
+                        &_text{
+                            max-width: 87%;
+                            display: flex;
+                            flex-wrap: wrap;
+                           p{
+                            font-size: 14px;
+                            line-height: 1.85714;
+                            font-weight: 500;
+                            color: $content-text_color;
+                           }
+                        }
                     }
                 }
             }
