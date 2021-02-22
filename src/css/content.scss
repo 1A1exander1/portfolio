@@ -1,4 +1,5 @@
 .content{
+    
     .wrapper{
         .row{
           
@@ -6,12 +7,12 @@
             .item{
                 padding: 0;
                 display: flex;
-    
+                
                 flex-wrap:wrap;
                 margin:  -8px;
                 justify-content: space-between;
                 width: 100%;
-               
+                height: 100%;
                 box-sizing: border-box;
                 .general-information{
                     //background:rosybrown;
@@ -20,7 +21,7 @@
                     margin:  8px;
                     &__img{
                         
-                        height: 473px;
+                        min-height: 473px;
                         //padding: 0 0 100% 0;
                         position: relative;
                        
@@ -42,12 +43,13 @@
                     }
                     &__info{
                         background:yellow;
-                        height: 373px;
+                        height: 50vh;
                     }
                 }
                 .main{
                     width: calc(69%  - 16px);
                     background:sandybrown;
+                    height: 90vh;
                     margin:  8px;
                     display: flex;
                     
